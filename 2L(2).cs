@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,8 +17,12 @@ namespace ConsoleApp8
                 {
                 Console.Write("введите  число последовательности:");
                 num = Convert.ToInt32(Console.ReadLine());
-                if (num % first == 0)
+                if (first == 0) ;
+                else
+                {
+                    if (num % first == 0)
                         q++;
+                }
                 }
                 while (num != 0);
                 Console.Write("Ответ{0}:",q);
