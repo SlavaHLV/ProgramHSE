@@ -17,7 +17,7 @@ namespace ConsoleApp7
             for (int i = 1; i < n; i++)
             {
             f++;
-            if (f == 3) { sum = sum - i; f = 0; } else { sum = sum + i; }
+            if (f % 3==0) { sum = sum - i;} else { sum = sum + i; }
             }
             Console.Write("Ответ:{0}", sum);
         }
