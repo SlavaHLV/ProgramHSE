@@ -10,23 +10,22 @@ namespace ConsoleApp8
     {
         static void Main(string[] args)
         {
-           int num, first, q = 0;
+            int num, first, q = 0;
             Console.Write("введите первое число последовательности:");
             first = Convert.ToInt32(Console.ReadLine());
-                do
-                {
+            do
+            {
                 Console.Write("введите  число последовательности:");
                 num = Convert.ToInt32(Console.ReadLine());
-                if (first == 0) ;
-                else
-                {
+                if (first != 0)
+                { 
                     if (num % first == 0)
                         q++;
                 }
-                }
-                while (num != 0);
-                Console.Write("Ответ{0}:",q);
-        }
+            }
+            while (num != 0);
+            Console.Write("Ответ{0}:", q);
         }
     }
+}
 
